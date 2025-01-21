@@ -1,0 +1,38 @@
+{% extends 'article.tex.j2' %}
+
+{% block header %}
+{{ super() }}
+\usepackage[margin=1in]{geometry}  % Example margins
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}                % clear header/footer
+\lhead{My Project}        % left header text
+\rhead{\today}            % right header text
+\cfoot{Page \thepage\ of \pageref{LastPage}}
+\usepackage{lastpage}     % needed for pageref{LastPage}
+\usepackage{booktabs}     % optional: better table lines
+\usepackage{float}        % optional: improved float control
+
+% Center all figures:
+\makeatletter
+\AtBeginEnvironment{figure}{\centering}
+\makeatother
+
+% Center all tables:
+\makeatletter
+\AtBeginEnvironment{table}{\centering}
+\makeatother
+
+% Define title, author, date:
+\title{My Title}
+\author{My Name}
+\date{\today}
+{% endblock header %}
+
+{% block maketitle %}
+\maketitle
+{% endblock maketitle %}
+
+{% block body %}
+{{ super() }}
+{% endblock body %}

@@ -1,0 +1,28 @@
+# Ignore all .env files
+.env
+.env.*
+
+# Ignore all Jupyter Notebook files
+*.ipynb
+
+# Ignore all CSV files
+*.csv
+
+# Ignore all PDF files
+*.pdf
+
+# Ignore all md files
+*.md
+
+# Ignore all tex files
+*.tex
+
+# Ignore all tex.j2 files
+*.tex.j2
+
+# Ignore all tplx files
+*.tplx
+
+# Allow these specific files
+!report_gazaCeasefire.pdf
+# !x_z_z.ipynb
