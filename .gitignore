@@ -25,6 +25,6 @@
 
 # Allow these specific files
 !collect_gceasefireTweets.pdf
-!prepocessing_gceasefireTweets
+!prepocessing_gceasefireTweets.pdf
 !report_gazaCeasefire.pdf
 # !x_z_z.ipynb
