@@ -1,0 +1,6 @@
+# Treat all PDF and PNG files as Python
+*.pdf   linguist-language=Python
+*.png   linguist-language=Python
+
+# Exclude HTML files in /docs from language stats
+*.html linguist-detectable=false
