@@ -24,5 +24,7 @@
 *.tplx
 
 # Allow these specific files
+!collect_gceasefireTweets.pdf
+!prepocessing_gceasefireTweets
 !report_gazaCeasefire.pdf
 # !x_z_z.ipynb
